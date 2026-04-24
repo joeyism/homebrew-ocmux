@@ -1,20 +1,20 @@
 class OcmuxRs < Formula
   desc "A terminal multiplexer for managing OpenCode sessions"
   homepage "https://github.com/joeyism/ocmux-rs"
-  version "0.2.1"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joeyism/ocmux-rs/releases/download/v0.2.1/ocmux-rs-aarch64-apple-darwin.tar.xz"
-      sha256 "d3445ae2f0e44342850b27a93d354c99823d99673c238ef454f92ad46ef772f3"
+      url "https://github.com/joeyism/ocmux-rs/releases/download/v0.3.0/ocmux-rs-aarch64-apple-darwin.tar.xz"
+      sha256 "fcfa1931c8a7d731b928d4b19e59c5bdce247bc455f44fdc18c028f6d8bfe3f9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joeyism/ocmux-rs/releases/download/v0.2.1/ocmux-rs-x86_64-apple-darwin.tar.xz"
-      sha256 "86b953dc2c839380867144d4d7c57f0d5166d8578aeb331e041d5be40c747a93"
+      url "https://github.com/joeyism/ocmux-rs/releases/download/v0.3.0/ocmux-rs-x86_64-apple-darwin.tar.xz"
+      sha256 "d26a22aac6db00216cd2d85dad5b563a536cda8fca2f0a512db19773685e3aca"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/joeyism/ocmux-rs/releases/download/v0.2.1/ocmux-rs-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "79a0cf5d4802f424b55120511b7f20e21e22c3e5b640a693761ef0ce968c9d70"
+    url "https://github.com/joeyism/ocmux-rs/releases/download/v0.3.0/ocmux-rs-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "fe07b4f798e94be98fcc92411f444465950725cc7d5beed8a325ce8bcdd0f04c"
   end
   license "Apache-2.0"
 
