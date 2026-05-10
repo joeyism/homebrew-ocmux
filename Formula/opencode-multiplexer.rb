@@ -1,20 +1,20 @@
 class OpencodeMultiplexer < Formula
   desc "A terminal multiplexer for managing OpenCode sessions"
   homepage "https://github.com/joeyism/ocmux-rs"
-  version "0.4.0"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/joeyism/ocmux-rs/releases/download/v0.4.0/opencode-multiplexer-aarch64-apple-darwin.tar.xz"
-      sha256 "e1a649c6840d67b895ed13fbf95ced8bb67e7b0adbad6a24f771eb6486ccd90a"
+      url "https://github.com/joeyism/ocmux-rs/releases/download/v0.5.0/opencode-multiplexer-aarch64-apple-darwin.tar.xz"
+      sha256 "75fba0431c7afa223024990b1d1aae4bea0eaa20df6055b698788fa890d1489e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/joeyism/ocmux-rs/releases/download/v0.4.0/opencode-multiplexer-x86_64-apple-darwin.tar.xz"
-      sha256 "dfc70c45c55496ad814ab3a8c0d6575068c6a5c1e9f8411aacf136b5a6fb5669"
+      url "https://github.com/joeyism/ocmux-rs/releases/download/v0.5.0/opencode-multiplexer-x86_64-apple-darwin.tar.xz"
+      sha256 "6c1876acf2ccd164a5c8927ed07e88cd3a1072142e9e15dd6d10c12ba01a0859"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/joeyism/ocmux-rs/releases/download/v0.4.0/opencode-multiplexer-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "c77ba4aa303fd4d49127da64eff82859159b1eac27686cd00d33665b0aa828b6"
+    url "https://github.com/joeyism/ocmux-rs/releases/download/v0.5.0/opencode-multiplexer-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "83522ead67222feef2beb3d6cfc99b9e8667b0d7a9ee5d73552050460e84d3b9"
   end
   license "Apache-2.0"
 
